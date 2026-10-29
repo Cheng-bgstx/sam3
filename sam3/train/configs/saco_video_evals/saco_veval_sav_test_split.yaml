@@ -1,0 +1,13 @@
+# @package _global_
+defaults:
+  - saco_veval_sav_test.yaml
+  - _self_
+paths:
+  dump_file_name: saco_veval_sav_test_split
+  ytvis_json: /root/data2/fyc/fyc/UAP-SAM2-main/data/annotation/saco_veval_sav_test_split.json
+  ytvis_dir: /root/data2/fyc/fyc/UAP-SAM2-main/data/media/saco_sav/JPEGImages_24fps/
+  bpe_path: /root/data2/fyc/fyc/UAP-SAM2-main/sam3/assets/bpe_simple_vocab_16e6.txt.gz
+  experiment_log_dir: /root/data2/fyc/fyc/UAP-SAM2-main/test_sav_split_d0.5/
+
+launcher:
+  experiment_log_dir: ${paths.experiment_log_dir}
